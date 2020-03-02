@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: #E6E6E7;
+    display: flex;
+    justify-content: space-between;
+}
+#entete {
+    margin-top: 10px;
+}
+header h1 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+header h2 {
+    font-size: 16px;
+    color: #6D6E65;
+    text-align: center;
+    margin-top: 5px;
+}
+#logo {
+    width: 50px;
+    margin: 6px 10px;
+}
+button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #DEDB00;
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bolder;
+}
+button span {
+    font-weight: bolder;
+    font-size: 12px;
+    color: #404042;
+}
+#boutonReservation {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+nav {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+nav a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    background-color: #DEDB00;
+}
+nav a img {
+    width: 40px;
+    height: 40px;
+}
+#menu {
+    display: none;
+    background-color: #DEDB00;
+    width: 100px;
+    height: 190px;
+    list-style: none;
+    z-index: 99;
+    position: fixed;
+    top: 50px;
+    right: 15px;
+    align-items: right;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    padding: 5px;
+    width: 90%;
+    height: 20px;
+    font-size: 12px;
+    text-align: right;
+}
+#menu li a {
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+a {
+    text-decoration: none;
+    color: #6D6E65;
+}
+main {
+    width: 100%;
+    background-color: #6D6E65;
+}
+.blanc {
+    background-color: white;
+    padding-bottom: 10px;
+}
+.blanc h3 {
+    color: #DEDB00;
+}
+.blanc p {
+    font-size: 12px;
+    margin: 10px 30px;
+    line-height: 20px;
+    padding-bottom: 5px;
+}
+h3 {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0 20px;
+    color: #DEDB00;
+}
+#place {
+    width: 100%;
+    background-color: #6D6E65;
+}
+#place h3 {
+    text-align: center;
+}
+#place ul {
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+#place li {
+    width: 90%;
+    height: 30px;
+    margin: 5px;
+    padding: 15px 0 0 15px;
+    background-color: #E6E6E7;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+#place a {
+    font-size: 10px;
+    font-weight: bolder;
+    color: #404042;
+    padding: 5px 10px;
+}
+#listeCreches {
+    background-color: #E6E6E7;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+#listeCreches h3 {
+    color: #404042;
+    text-align: center;
+}
+#listeCreches ul {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+#listeCreches ul li {
+    width: 90%;
+    height: 30px;
+    margin: 5px 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    background-color: #6D6E65;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+#listeCreches ul li a {
+    padding: 0 5px;
+}
+#listeCreches ul li a img {
+    width: 20px;
+    height: 20px;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+}
+.gris {
+    background-color: #6D6E65;
+    width: 100%;
+}
+.gris form {
+    margin-bottom: 100px;
+}
+.gris form div {
+    display: flex;
+    justify-content: space-between;
+    background-color: #404042;
+    width: 90%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 5px;
+}
+.gris form img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+.gris form a {
+    color: white;
+    font-size: 10px;
+    margin-top: 15px;
+}
+.tarifs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+.tarifs a {
+    margin-top: 20px;
+}
+.texteTarifs {
+    width: 70%;
+    margin: 10px;
+}
+.texteTarifs p {
+    font-size: 12px;
+    color: white;
+}
+.prix p {
+    color: #DEDB00;
+    font-weight: bolder;
+}
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+.blanc form p {
+    margin: 0;
+    padding: 0;
+}
+input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: #E6E6E7;
+    margin: 5px 0;
+}
+#montrer {
+    display: flex;
+    justify-content: center;
+}
+#montrer input {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+#montrer p {
+    padding-top: 10px;
+}
+form button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #DEDB00;
+    color: #404042 ;
+    border-radius: 0;
+    display: block;
+    margin: 10px auto;
+}
+.gris form p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #E6E6E7;
+}
+.blanc form textarea {
+    width: 100%;
+    border: none;
+    padding: 5px 0;
+    margin-top: 5px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #E6E6E7;
+}
+::placeholder {
+    padding-left: 5px;
+    color: #6D6E65;
+}
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #404042;
+}
+footer p {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
