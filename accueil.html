@@ -15,9 +15,14 @@
         <div id="entete">
             <h1>Gronounours</h1>
             <h2>CRÈCHES</h2>
-        </div>
-        
+        </div>       
         <nav>
+            <a href="#" id="loginClick"><img src="../CRECHE/assets/svg/icon_login.svg"></a>
+            <ul id="login">
+                <li><a href="http:accueil.php">Login</a></li>
+                <li><a href="http:accueil.php">Logout</a></li>
+                <li><a href="http:accueil.php">Inscriptions</a></li>
+            </ul>
             <a href="#" id="menuClick"><img src="../CRECHE/assets/images/boutonMenu.png"></a>
             <ul id="menu">
                 <li><a href="http:accueil.php">Accueil</a></li>
@@ -26,41 +31,24 @@
                 <li><a href="http:tarifs.php">Tarifs</a></li>
                 <li><a href="http:inscription.php">Inscription</a></li>
                 <li><a href="http:contact.php">Contact</a></li>
-            </ul>
-            
+            </ul>           
         </nav>
     </header>
     <main>
-        <section class="gris">
-            <h3>Connexion</h3>
+        <div class="avecPhoto photoUn">
+            <h3>Chercher une crèche</h3>
             <form method="" action="">
                 <label>
-                    <p>Identifiant</p>
-                    <input type="text" name="identifiant" required placeholder="entrez votre identifiant">
+                    <input type="text" name="nom" required placeholder="entrez l'arrondissement">
                 </label>
-                <label>
-                    <p>Mot de passe</p>
-                    <input type="password" name="password" required placeholder="entrez une mot de passe">
-                    <a href="#">Mot de passe oublié?</a>
-                </label>
-                <button type="submit">CONNEXION</button>
-                <div>
-                    <a href="#">S'INSCRIRE</a>
-                    <img src="assets/images/fleche.png">
-                </div>
-                <div>
-                    <a href="#">CONTINUER SANS CONNEXION</a>
-                    <img src="assets/images/fleche.png">
-                </div>
+                <button type="submit">CHERCHER</button>
             </form>
-        </section>
-        <section class="blanc">
-            <div>
-                <h3>Présentation</h3>
-                <p>Gronounours Crèches compte 10 structures sur Marseille. Chacune accueille 30 enfants de 10 semaines à 4 ans. Les enfants accueillis sont répartis en deux sections, selon leur âge : les bébés et les moyens-grands. L'Atelier des velours regroupe les plus jeunes et à partir de 18 mois l'enfant est accueilli à l'Atelier des merveilles.
-                    La crèche compte avec des installations sur tous les arrondissements de Marseille. Ces installations bénéficient d’un environnement calme pour permettre aux enfants de grandir en toute tranquillité. Outre un espace intérieur de 350m², moderne et coloré, la crèche dispose d’un jardin, idéal pour les activités en plein air. </p>
+        </div>
+        <div class="avecPhoto photoDeux">
+            <div id="texteAccueil">
+                <p>Gronounours Crèches compte 10 structures sur Marseille. Chacune accueille 30 enfants de 10 semaines à 4 ans. Ces installations bénéficient d’un environnement calme pour permettre aux enfants de grandir en toute tranquillité.</p>
             </div>
-            <div>
+            <!-- <div>
                 <h3>Réquis</h3>
                 <p>L’arrivée en crèche demande aux parents de répondre à certaines obligations, notamment en termes de vaccination. Trois maladies font l’objet d’une vaccination obligatoire du fait de leur gravité et/ou des risques de séquelles importantes : la diphtérie, le tétanos, la poliomyélite.
                     Les parents dont l’enfant est accueilli en crèche doivent veiller au respect de cette obligation ; la vaccination doit être débutée au plus tard trois mois après son entrée en collectivité.
@@ -69,9 +57,9 @@
             <div>
                 <h3>Horaires</h3>
                 <p>Afin d’apporter une réponse adaptée à chaque famille, la structure propose une amplitude horaire allant de 6h à 21h, de lundi à vendredi, et de 8h à 18h les jours fériés et samedis. </p>
-            </div>
-        </section>
-        <section class="gris">
+            </div> -->
+        </div>
+        <div class="avecPhoto photoTrois">
             <div id="place">
                 <h3>Places disponibles aujourd’hui</h3>
                 <ul>
@@ -102,7 +90,7 @@
                     <li>45, La Cannebière - 13001<a href="#"><img src="assets/images/fleche.png"></a></li>
                 </ul>
             </div> -->
-        </section>
+        </div>
         <section class="blanc">
             <div>
                 <h3>Gronounours-13003</h3>
@@ -122,34 +110,57 @@
              <div class="tarifs">
                 <a href="#"><img src="assets/images/R.png"></a>
                 <div class="texteTarifs">
-                    <p>Accueil régulier: proposé aux tous les enfants, avec réservation par mois.</p>
+                    <p>Accueil Régulier: proposé aux tous les enfants, avec réservation par mois.</p>
                     <div class="prix">
                         <p>Demi-journnée	200€/mois</p>
-                        <p>Complete		    350€/mois</p>
+                        <p>Journée	    350€/mois</p>
                     </div>
                 </div>
              </div>
              <div class="tarifs">
                 <a href="#"><img src="assets/images/O.png"></a>
                 <div class="texteTarifs">
-                    <p>Accueil régulier: proposé aux tous les enfants, avec réservation par mois.</p>
+                    <p>Accueil Occassionel: proposé aux tous les enfants, avec réservation min. 24h avant.</p>
                     <div class="prix">
-                        <p>Demi-journnée	200€/mois</p>
-                        <p>Complete		    350€/mois</p>
+                        <p>Demi-journnée	20€</p>
+                        <p>Journée		    30€</p>
                     </div>
                 </div>
             </div>
             <div class="tarifs">
                 <a href="#"><img src="assets/images/U.png"></a>
                 <div class="texteTarifs">
-                    <p>Accueil régulier: proposé aux tous les enfants, avec réservation par mois.</p>
+                    <p>Accueil Urgence: proposé aux tous les enfants, avec réservation le même jour.</p>
                     <div class="prix">
-                        <p>Demi-journnée	200€/mois</p>
-                        <p>Complete		    350€/mois</p>
+                        <p>Demi-journnée	30€</p>
+                        <p>Journée		    50€</p>
                     </div>
                 </div>
             </div>
          </section>
+         <section class="gris">
+            <h3>Connexion</h3>
+            <form method="" action="">
+                <label>
+                    <p>Identifiant</p>
+                    <input type="text" name="identifiant" required placeholder="entrez votre identifiant">
+                </label>
+                <label>
+                    <p>Mot de passe</p>
+                    <input type="password" name="password" required placeholder="entrez une mot de passe">
+                    <a href="#">Mot de passe oublié?</a>
+                </label>
+                <button type="submit">CONNEXION</button>
+                <div>
+                    <a href="#">S'INSCRIRE</a>
+                    <img src="assets/images/fleche.png">
+                </div>
+                <div>
+                    <a href="#">CONTINUER SANS CONNEXION</a>
+                    <img src="assets/images/fleche.png">
+                </div>
+            </form>
+        </section>
         <section class="blanc">
             <h3>Inscription</h3>
             <form method="" action="">
