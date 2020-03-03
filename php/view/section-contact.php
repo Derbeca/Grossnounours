@@ -1,4 +1,4 @@
-<section class="blanc">
+<section class="blanc contact">
     <h3>Contact</h3>
     <form method="" action="">
         <label>

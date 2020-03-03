@@ -5,7 +5,7 @@ body {
 }
 header {
     width: 100%;
-    height: 15vh;
+    height: 85px;
     background-color: #E6E6E7;
     display: flex;
     justify-content: space-between;
@@ -27,8 +27,14 @@ header h2 {
     margin-top: 5px;
 }
 #logo {
-    width: 50px;
+    height: 80px;
     margin: 6px 10px;
+}
+#logo a {
+    height: 80px;
+}
+#logo img {
+    width: 100%;
 }
 button {
     width: 100px;
@@ -85,45 +91,34 @@ nav a img {
     width: 40px;
     height: 40px;
 }
-#menu, #login {
+.menu {
     display: none;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #DEDB00;
     width: 100%;
-    height: 100vh;
+    height: 15vh;
     list-style: none;
     z-index: 99;
     position: fixed;
     top: 0;
     left: 0;
-    align-items: right;
     margin: 0;
     padding: 0;
 }
-#login {
-    display: none;
-    background-color: #DEDB00;
-    width: 100px;
-    height: 190px;
-    list-style: none;
-    z-index: 99;
-    position: fixed;
-    top: 50px;
-    right: 15px;
-    align-items: right;
-    margin: 0;
-    padding: 0;
-}
-#menu, #login li {
+
+.menu li {
     padding: 5px;
-    height: 20px;
     font-size: 12px;
     text-align: right;
 }
-#menu, #login li a {
+.menu li a {
     margin: 0;
     padding-right: 5px;
     padding-top: 5px;
+}
+.menu img {
+    width: 20px;
+    height: 20px;
 }
 #loginClick {
     background-color: ;
@@ -135,6 +130,9 @@ a {
 main {
     width: 100%;
     background-color: #6D6E65;
+}
+.contact {
+    height: 80vh;
 }
 .blanc {
     background-color: white;
@@ -195,7 +193,7 @@ h3 {
     font-weight: bolder;
 }
 #place a {
-    font-size: 10px;
+    font-size: 2vmin;
     font-weight: bolder;
     color: #404042;
     padding: 5px 10px;
@@ -370,5 +368,134 @@ footer p {
     width: 20%;
 }
 #icons a img {
-    width: 100%;
+    width: 30px;
 }
+
+/* ANIMATIONS */
+
+@-webkit-keyframes flipInX {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+  
+  @keyframes flipInX {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+  
+  .flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+  }
+
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes flipOutX {
+    from {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  
+    30% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes flipOutX {
+    from {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  
+    30% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      opacity: 0;
+    }
+  }
+  
+  .flipOutX {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-name: flipOutX;
+    animation-name: flipOutX;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+  }
