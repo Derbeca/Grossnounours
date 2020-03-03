@@ -25,12 +25,14 @@
                 <li><a href="inscription.php">Inscription</a></li>
             </ul>
             <a href="#" id="menuClick"><img src="../CRECHE/assets/images/boutonMenu.png"></a>
-            <ul id="menu">
+         
+        </nav>
+    </header>
+    <ul id="menu">
                 <li><a href="accueil.php">Accueil</a></li>
                 <li><a href="creches.php">Crèches</a></li>
                 <li><a href="tarifs.php">Tarifs</a></li>
                 <li><a href="contact.php">Contact</a></li>
-            </ul>           
-        </nav>
-    </header>
+                <li><img src="../CRECHE/assets/svg/icon-fermer.svg" id="btn-fermer"></li>
+            </ul>  
     <main>
