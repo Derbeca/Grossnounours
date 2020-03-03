@@ -15,7 +15,8 @@
         <div id="entete">
             <h1>Gronounours</h1>
             <h2>CRÈCHES</h2>
-        </div>       
+        </div>  
+        <!-- <button type="submit" id="boutonReservation">Réservation <span>URGENCE</span></button>      -->
         <nav>
             <a href="#" id="loginClick"><img src="../CRECHE/assets/svg/icon_login.svg"></a>
             <ul id="login">

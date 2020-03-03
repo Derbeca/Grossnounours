@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="bouton">
-        <a href="accueil.html"><img src="assets/images/logoRond.png"></a>
+        <a href="accueil.php"><img src="assets/images/logoRond.png"></a>
         <h1>Gronounours</h1>
         <h2>CRÈCHES</h2>
     </div>
