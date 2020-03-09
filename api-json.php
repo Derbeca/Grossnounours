@@ -28,6 +28,18 @@ if ($idForm != "")
         require "php/controller/traitement-login.php";
     }
 
+    if ($idForm == "logout")
+    {
+        // ON VA CHARGER LE FICHIER DE TRAITEMENT CORRESPONDANT
+        require "php/controller/traitement-logout.php";
+    }
+
+    if ($idForm == "recherche")
+    {
+        // ON VA CHARGER LE FICHIER DE TRAITEMENT CORRESPONDANT
+        require "php/controller/traitement-recherche.php";
+    }
+
     if ($idForm == "ajouter")
     {
         // ON VA CHARGER LE FICHIER DE TRAITEMENT CORRESPONDANT

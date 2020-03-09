@@ -11,7 +11,7 @@
     <div id="bouton">
         <a href="accueil.php"><img src="assets/images/logoRond.png"></a>
         <h1>Gronounours</h1>
-        <h2>CRÈCHES</h2>
+        <h2>Garde d'enfants</h2>
     </div>
     
 </body>

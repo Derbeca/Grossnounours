@@ -74,6 +74,47 @@ function insererLigneTable($nomTable, $tabAssoColonneValeur)
     return $pdoStatement;
 }
 
+function lireTable($nomTable, $colonne="", $valeurSelection="", $tri="id DESC")
+{
+    // on rajoute la clause where seulement si $colonne n'est pas vide
+    if ($colonne != "")
+    {
+        $clauseWhere = "WHERE $colonne = '$valeurSelection'";
+    }
+    else
+    {
+        $clauseWhere = "";
+    }
+    $requeteSQLPreparee =
+<<<CODESQL
+SELECT * FROM $nomTable
+$clauseWhere
+ORDER BY $tri
+CODESQL;
+    $pdoStatement = envoyerRequeteSQL($requeteSQLPreparee, []);
+    // https://www.php.net/manual/fr/class.pdostatement.php
+    // $pdoStatement VA NOUS SERVIR A RECUPERER LES RESULTATS
+    // https://www.php.net/manual/fr/pdostatement.fetchall.php
+    $tabLigne = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
+    return $tabLigne;
+}
+
+function chercher($nomTable, $recherche)
+{
+    $requeteSQLPreparee =
+<<<CODESQL
+SELECT * FROM $nomTable
+WHERE $recherche == adresse 
+CODESQL;
+
+    $pdoStatement = envoyerRequeteSQL($requeteSQLPreparee, []);
+    // https://www.php.net/manual/fr/class.pdostatement.php
+    // $pdoStatement VA NOUS SERVIR A RECUPERER LES RESULTATS
+    // https://www.php.net/manual/fr/pdostatement.fetchall.php
+    $tabLigne = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
+    return $tabLigne;
+}
+
 
 
 

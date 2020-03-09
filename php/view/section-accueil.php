@@ -1,6 +1,6 @@
 <section>
         <div class="avecPhoto photoUn">
-            <h3>Chercher une crèche</h3>
+            <h3>Chercher une assistante maternelle</h3>
             <form method="" action="">
                 <label>
                     <input type="text" name="nom" required placeholder="entrez l'arrondissement">
@@ -10,7 +10,7 @@
         </div>
         <div class="avecPhoto photoDeux">
             <div id="texteAccueil">
-                <p>Gronounours Crèches compte 10 structures sur Marseille. Chacune accueille 30 enfants de 10 semaines à 4 ans. Ces installations bénéficient d’un environnement calme pour permettre aux enfants de grandir en toute tranquillité.</p>
+                <p>Gronounours compte plus de 50 assistantes maternelles sur Marseille. Chacune accueille maximun 4 enfants de 10 semaines à 4 ans. Ces installations bénéficient d’un environnement calme pour permettre aux enfants de grandir en toute tranquillité.</p>
             </div>
             <!-- <div>
                 <h3>Réquis</h3>

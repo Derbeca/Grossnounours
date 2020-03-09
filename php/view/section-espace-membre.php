@@ -1,5 +1,5 @@
 <section class="blanc">
-    <h3>Inscription</h3>
+    <h3>Profil</h3>
     <form method="POST" action="api-json.php">
         <label>
             <p>Nom</p>
@@ -14,18 +14,17 @@
             <input type="number" name="phone" required placeholder="entrez votre téléphone">
         </label>
         <label>
-            <p>Adresse</p>
-            <input type="number" name="adresse" required placeholder="entrez votre arrondissement">
-        </label>
-        <label>
             <p>Mot de passe</p>
             <input type="password" name="password" required placeholder="entrez une mot de passe">
         </label>
+<!--         <div id="montrer">
+            <input id="montrer_password" type="checkbox"> 
+            <p>Montrer mot de passe</p>
+        </div>
         <label>
-            <p>Ápropos de moi <i>(facultatif)</i></p>
-            <textarea placeholder="max 10 lines" name="message"></textarea>
-        </label>
-
+            <p>Confirmer mot de passe</p>
+            <input type="password" name="password" required placeholder="confirmez une mot de passe">
+        </label> -->
         <button type="submit">INSCRIPTION</button>
         <div class="confirmation">
             <!-- ICI ON AFFICHERA LE MESSAGE DE CONFIRMATION -->
