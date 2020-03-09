@@ -1,23 +1,16 @@
 <section class="gris">
     <h3>Connexion</h3>
-    <form method="" action="">
+    <form method="POST" action="api-json.php">
         <label>
-            <p>Identifiant</p>
-            <input type="text" name="identifiant" required placeholder="entrez votre identifiant">
+            <p>Email</p>
+            <input type="email" name="login_email" required placeholder="entrez votre email">
         </label>
         <label>
             <p>Mot de passe</p>
-            <input type="password" name="password" required placeholder="entrez une mot de passe">
+            <input type="password" name="login_password" required placeholder="entrez votre mot de passe">
             <a href="#">Mot de passe oublié?</a>
         </label>
         <button type="submit">CONNEXION</button>
-        <div>
-            <a href="#">S'INSCRIRE</a>
-            <img src="assets/images/fleche.png">
-        </div>
-        <div>
-            <a href="#">CONTINUER SANS CONNEXION</a>
-            <img src="assets/images/fleche.png">
-        </div>
+        <input type="hidden" name="idForm" value="login">
     </form>
 </section>

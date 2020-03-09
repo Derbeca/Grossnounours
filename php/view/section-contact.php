@@ -1,6 +1,6 @@
 <section class="blanc contact">
     <h3>Contact</h3>
-    <form method="" action="">
+    <form method="POST" action="api-json.php">
         <label>
             <p>Nom</p>
             <input type="text" name="nom" required placeholder="entrez votre nom">
@@ -14,5 +14,9 @@
             <textarea name="message" placeholder="entrez votre email"></textarea>
         </label>
         <button type="submit">ENVOYER</button>
+        <div class="confirmation">
+            <!-- ICI ON AFFICHERA LE MESSAGE DE CONFIRMATION -->
+        </div>
+        <input type="hidden" name="idForm" value="contact">
     </form>
 </section>

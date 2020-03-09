@@ -1,6 +1,6 @@
 <section class="blanc">
     <h3>Inscription</h3>
-    <form method="" action="">
+    <form method="POST" action="api-json.php">
         <label>
             <p>Nom</p>
             <input type="text" name="nom" required placeholder="entrez votre nom">
@@ -17,14 +17,18 @@
             <p>Mot de passe</p>
             <input type="password" name="password" required placeholder="entrez une mot de passe">
         </label>
-        <div id="montrer">
+<!--         <div id="montrer">
             <input id="montrer_password" type="checkbox"> 
             <p>Montrer mot de passe</p>
         </div>
         <label>
             <p>Confirmer mot de passe</p>
             <input type="password" name="password" required placeholder="confirmez une mot de passe">
-        </label>
+        </label> -->
         <button type="submit">INSCRIPTION</button>
+        <div class="confirmation">
+            <!-- ICI ON AFFICHERA LE MESSAGE DE CONFIRMATION -->
+        </div>
+        <input type="hidden" name="idForm" value="inscription">
     </form>
 </section>
