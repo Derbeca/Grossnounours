@@ -99,21 +99,7 @@ CODESQL;
     return $tabLigne;
 }
 
-function chercher($nomTable, $recherche)
-{
-    $requeteSQLPreparee =
-<<<CODESQL
-SELECT * FROM $nomTable
-WHERE $recherche == adresse 
-CODESQL;
 
-    $pdoStatement = envoyerRequeteSQL($requeteSQLPreparee, []);
-    // https://www.php.net/manual/fr/class.pdostatement.php
-    // $pdoStatement VA NOUS SERVIR A RECUPERER LES RESULTATS
-    // https://www.php.net/manual/fr/pdostatement.fetchall.php
-    $tabLigne = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
-    return $tabLigne;
-}
 
 
 

@@ -1,11 +1,12 @@
 <section>
         <div class="avecPhoto photoUn">
             <h3>Chercher une assistante maternelle</h3>
-            <form method="" action="">
+            <form method="POST" action="api-json.php">
                 <label>
-                    <input type="text" name="nom" required placeholder="entrez l'arrondissement">
+                    <input type="text" name="adresse" required placeholder="entrez l'arrondissement">
                 </label>
-                <button type="submit">CHERCHER</button>
+                <button type="submit" name="recherche" value="search">CHERCHER</button>
+                <input type="hidden" name="idForm" value="recherche">
             </form>
         </div>
         <div class="avecPhoto photoDeux">
